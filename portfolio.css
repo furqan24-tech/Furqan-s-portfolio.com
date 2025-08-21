@@ -23,7 +23,7 @@ body {
 }
 
 .nav-left h2 {
-  color: #fff;
+  color:#f39c12 ;
 }
 
 .nav-right ul {
@@ -255,3 +255,4 @@ body {
     font-size: 1rem;
   }
 }
+
