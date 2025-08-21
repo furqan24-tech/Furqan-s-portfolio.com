@@ -1,0 +1,257 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 40px;
+  background: #222;
+  height: 70px;
+}
+
+.nav-left h2 {
+  color: #fff;
+}
+
+.nav-right ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-right ul li a:hover {
+  color: #f39c12;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+/* First section */
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+
+.text1 {
+  font-size: 2rem;
+}
+.purple {
+  color: #f39c12;
+}
+
+.text2 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.ft {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+
+
+.img1 {
+  width: 280px;
+  border-radius: 15px;
+}
+
+/* HR line */
+.hr {
+  border: none;
+  height: 2px;
+  background: white;
+  margin: 40px 0;
+}
+
+.section2 {
+  padding: 60px 40px;
+  background: #121212;
+}
+
+.Journey {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #f39c12;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+}
+
+
+/* Card */
+.div10 {
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+
+  display: flex;              /* flex use kiya equal height + alignment ke liye */
+  flex-direction: column;
+  height: 100%;     
+}
+
+.div10:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Title */
+.p9 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #f39c12;
+}
+
+/* Description */
+.p10 {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  flex-grow: 1;               /* content stretch karega */
+}
+
+/* Button */
+.p11 {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f39c12;
+  color: #111;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: auto;           /* hamesha neeche fix */
+}
+
+.p11:hover {
+  background: #ffa500;
+  border: #f39c12 solid 2px;
+}
+
+
+/* small tablets */
+@media (max-width: 768px) {
+  .nav-right ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #222;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-right ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .nav-right{
+    display: block;
+  }
+
+  .first {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img1 {
+    width: 220px;
+    margin-top: 20px;
+  }
+}
+
+/* phones (425px and below) */
+@media (max-width: 425px) {
+  .Journey {
+    font-size: 1.5rem;
+  }
+  .div10 {
+    height: auto;
+    width: 350px;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto ;
+  }
+}
+
+/* phones (375px and below) */
+@media (max-width: 375px) {
+  .text1 {
+    font-size: 1.2rem;
+  }
+  .text2 {
+    font-size: 1rem;
+  }
+  .ft {
+    font-size: 1.1rem;
+  }
+  .grid-container{
+    justify-content: center;
+  }
+}
+
+/* phones (320px and below) */
+@media (max-width: 320px) {
+  .first {
+    padding: 15px;
+  }
+  .img1 {
+    width: 180px;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    
+  }
+   .div10 {
+    height: auto;
+    width: 270px;
+  }
+  .nav-left h2 {
+    font-size: 1rem;
+  }
+}

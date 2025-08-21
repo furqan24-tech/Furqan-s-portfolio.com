@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <nav class="nav">
+  <div class="nav-left">
+    <h2>Furqan's portfolio</h2>
+  </div>
+  <div class="nav-right">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Skills</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+  </div>
+</nav>
+
+    <main >
+      <div class="first">
+        <div class="left">
+          <p class="text1">Hi, My name is <span class="purple">Furqan</span></p>
+          <p class="text2">and I am a professinal</p>
+          <span class="ft" id="element"></span>
+        </div>
+        <div class="right">
+          <img
+            class="img1"
+            src="./furqan.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr class="hr" />
+      <div class="section2">
+  <h2 class="Journey">My Journey</h2>
+  <div class="grid-container">
+        <div class="div10">
+          <p class="p9">Middle Education</p>
+          <p  class="p10">
+I completed my middle school education at RPS School, where I built a strong academic foundation and discipline.          </p>
+          <p class="p11">more</p>
+        </div>
+        <div class="div10">
+          <p class="p9">Secondary Education</p>
+          <p class="p10">
+I completed my Secondary Education at Islamia High School, Saddar Cantt, where I built a strong academic foundation and developed essential skills for further studies.          </p>
+          <p class="p11">more</p>
+        </div>
+        <div class="div10">
+          <p class="p9">Higher Secondary Education</p>
+          <p class="p10">
+Pursued Higher Education from PITAC (Pakistan Industrial Technical Assistance Centre), with a strong focus on advanced technical and industrial training          </p>
+          <p class="p11">more</p>
+        </div>
+        <div class="div10">
+          <p class="p9"> E-commerce experience</p>
+          <p class="p10">
+Gained hands-on experience in E-commerce development at Natrix, focusing on online store management, user-friendly interfaces, and seamless shopping experiences          </p>
+          <p class="p11">more</p>
+        </div>
+        <div class="div10">
+          <p class="p9"> Frontend Internship</p>
+          <p class="p10">
+Completed a Frontend Development Internship at CodePulse Solutions, gaining hands-on experience in modern web technologies.          </p>
+          <p class="p11">more</p>
+        </div>
+        <div class="div10">
+          <p class="p9"> Frontend Development As Profession </p>
+          <p class="p10">
+Completed 8 months as a Frontend Developer at CodePulse Solutions, developing responsive websites and enhancing user interfaces with modern web technologies.          <p class="p11">more</p>
+        </div>
+      </div>
+</div>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Frontend Developer","UI/UX desighner",],
+        typeSpeed: 50,
+      });
+    </script>
+      <script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav ul");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+  </body>
+</html>
