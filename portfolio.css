@@ -23,7 +23,7 @@ body {
 }
 
 .nav-left h2 {
-  color:#f39c12 ;
+  color:white ;
 }
 
 .nav-right ul {
@@ -233,6 +233,10 @@ body {
   .grid-container{
     justify-content: center;
   }
+  .div10 {
+    height: auto;
+    width: 290px;
+  }
 }
 
 /* phones (320px and below) */
@@ -255,4 +259,5 @@ body {
     font-size: 1rem;
   }
 }
+
 
